@@ -2,7 +2,7 @@
 FROM node
 
 # # Set the working directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json .
@@ -12,6 +12,9 @@ RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+
+# Expose the backend port
+EXPOSE 5000
 
 # Define the command to run the application
 CMD ["npm", "start"]
