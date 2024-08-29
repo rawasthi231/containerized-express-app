@@ -22,7 +22,7 @@ export default class Request {
     this.headers = headers;
     this.response = response;
 
-    this.authenticate();
+    // this.authenticate();
   }
 
   public getBody() {

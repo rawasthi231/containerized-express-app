@@ -7,7 +7,7 @@ export default class UserController {
     return {
       success: true,
       status: HTTP_STATUS.OK,
-      message: "users",
+      message: "Response from users",
     };
   }
 }

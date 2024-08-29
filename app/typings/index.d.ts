@@ -73,7 +73,7 @@ export type HttpStatus = {
   };
 };
 
-export interface IControllerResponse<T = undefined> {
+export interface IControllerResponse<T = unknown | undefined> {
   message: string;
   success: boolean;
   data?: T;
